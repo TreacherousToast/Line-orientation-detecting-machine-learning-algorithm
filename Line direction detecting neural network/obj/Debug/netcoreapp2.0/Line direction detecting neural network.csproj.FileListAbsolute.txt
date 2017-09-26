@@ -1,0 +1,10 @@
+/home/treacheroustoast/Programming projects/VS Code/Line direction detecting neural network/bin/Debug/netcoreapp2.0/Line direction detecting neural network.deps.json
+/home/treacheroustoast/Programming projects/VS Code/Line direction detecting neural network/bin/Debug/netcoreapp2.0/Line direction detecting neural network.runtimeconfig.json
+/home/treacheroustoast/Programming projects/VS Code/Line direction detecting neural network/bin/Debug/netcoreapp2.0/Line direction detecting neural network.runtimeconfig.dev.json
+/home/treacheroustoast/Programming projects/VS Code/Line direction detecting neural network/bin/Debug/netcoreapp2.0/Line direction detecting neural network.dll
+/home/treacheroustoast/Programming projects/VS Code/Line direction detecting neural network/bin/Debug/netcoreapp2.0/Line direction detecting neural network.pdb
+/home/treacheroustoast/Programming projects/VS Code/Line direction detecting neural network/obj/Debug/netcoreapp2.0/Line direction detecting neural network.csproj.CoreCompileInputs.cache
+/home/treacheroustoast/Programming projects/VS Code/Line direction detecting neural network/obj/Debug/netcoreapp2.0/Line direction detecting neural network.AssemblyInfoInputs.cache
+/home/treacheroustoast/Programming projects/VS Code/Line direction detecting neural network/obj/Debug/netcoreapp2.0/Line direction detecting neural network.AssemblyInfo.cs
+/home/treacheroustoast/Programming projects/VS Code/Line direction detecting neural network/obj/Debug/netcoreapp2.0/Line direction detecting neural network.dll
+/home/treacheroustoast/Programming projects/VS Code/Line direction detecting neural network/obj/Debug/netcoreapp2.0/Line direction detecting neural network.pdb
