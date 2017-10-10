@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.IO;
 
 namespace Line_direction_detecting_neural_network
@@ -10,7 +10,8 @@ namespace Line_direction_detecting_neural_network
             ProgramRun p = new ProgramRun();
             p.setup();
         }
-    }
+   }
+
     class ProgramRun
     {
         int[,,] straightLineFilters = new int[3, 3, 100];
@@ -19,9 +20,12 @@ namespace Line_direction_detecting_neural_network
         int straightLineScore = 0;
         int diagonalLineScore = 0;
         string finalDirection = "";
-
+        
         public void setup()
         {
+            Console.WriteLine("TreacherousToast's line orientation detecting neural network v0.1");
+            Console.WriteLine("If you are using this algorithm, please leave a link to its GitHub page");
+            Console.WriteLine();
             for (int i = 0; i < 100; i++)
             {
                 straightLineFilters[1, 1, i] = 2;
@@ -45,20 +49,24 @@ namespace Line_direction_detecting_neural_network
                 diagonalLineFilters[0, 2, i] = 2;
                 diagonalLineFilters[1, 2, i] = 2;
                 diagonalLineFilters[2, 2, i] = 2;
-            }
-            
+            }            
             trainStraightLineFilters();
             trainDiagonalLineFilters();
+            Console.WriteLine("Direction | Diagonal score | Straight score");
             for (int i = 0; i < 10; i++)
             {
                 checkImage(i+".txt");
                 printToScreen();
             }
         }
+        
         public void printToScreen()
         {
-            Console.WriteLine(finalDirection);
+            Console.WriteLine(finalDirection + "\t"+diagonalLineScore+"\t\t"+straightLineScore);
+            straightLineScore = 0;
+            diagonalLineScore = 0;
         }
+        
         public void trainStraightLineFilters()
         {
             int amountOfArrayWrittenTo = 0;
@@ -92,6 +100,7 @@ namespace Line_direction_detecting_neural_network
                 }
             }
         }
+        
         public void trainDiagonalLineFilters()
         {
             int amountOfArrayWrittenTo = 0;
@@ -124,7 +133,7 @@ namespace Line_direction_detecting_neural_network
                     }
                 }
             }
-        }
+        }        
         
         public void checkImage(string fileName)
         {
@@ -163,9 +172,6 @@ namespace Line_direction_detecting_neural_network
             {
                 finalDirection = "Diagonal";
             }
-            straightLineScore = 0;
-            diagonalLineScore = 0;
         }
     }
-}
-
+} 
